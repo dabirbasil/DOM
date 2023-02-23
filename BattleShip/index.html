@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BattleShip</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="modal-container">
+        <div class="modal-box">
+          <div class="modal-top">
+            <div class="modal-cross">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="currentColor"
+                class="bi bi-x-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-middle">
+            You Won with <span class="percentage"></span>
+          </div>
+
+          <div class="modal-button">
+            <button id="modalBtn"><a href=".">Retry</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="nav">
+
+        <div class="nav-section right">
+          <div id="darkBtn" class="nav-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-moon-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div class="nav-section text">
+BattleShip
+        </div>
+
+
+        <div class="nav-section right">
+          <div  class="nav-btn colorborder">
+      <input class="color-btn" type="color" name="" id="" value="#00ff88">
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="area-text">
+          <div class="Game-Identifier">
+            Hello, let's play! There are 9 ships
+          </div>
+        </div>
+        <div class="container">
+          <div class="outer-box"><div class="box" data-box="box-1"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-2"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-3"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-4"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-5"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-6"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-7"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-8"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-9"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-10"></div></div>
+
+          <div class="outer-box"><div class="box" data-box="box-11"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-12"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-13"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-14"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-15"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-16"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-17"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-18"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-19"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-20"></div></div>
+
+          <div class="outer-box"><div class="box" data-box="box-21"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-22"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-23"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-24"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-25"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-26"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-27"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-28"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-29"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-30"></div></div>
+
+          <div class="outer-box"><div class="box" data-box="box-31"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-32"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-33"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-34"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-35"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-36"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-37"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-38"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-39"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-40"></div></div>
+
+          <div class="outer-box"><div class="box" data-box="box-41"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-42"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-43"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-44"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-45"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-46"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-47"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-48"></div></div>
+          <div class="outer-box"><div class="box" data-box="box-49"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+    <!-- Script -->
+  </body>
+</html>
